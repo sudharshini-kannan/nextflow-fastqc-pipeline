@@ -1,0 +1,71 @@
+Mar-05 17:28:27.173 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+Mar-05 17:28:27.359 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.10.4
+Mar-05 17:28:27.394 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/sudharshini/.nextflow/plugins; core-plugins: nf-amazon@3.4.4,nf-azure@1.20.2,nf-cloudcache@0.5.0,nf-codecommit@0.5.0,nf-console@1.3.0,nf-google@1.23.5,nf-k8s@1.2.2,nf-tower@1.17.5,nf-wave@1.16.1
+Mar-05 17:28:27.440 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Mar-05 17:28:27.442 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Mar-05 17:28:27.447 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Mar-05 17:28:27.471 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Mar-05 17:28:27.638 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Mar-05 17:28:27.775 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Mar-05 17:28:27.776 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Mar-05 17:28:27.804 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/sudharshini/.nextflow/secrets/store.json
+Mar-05 17:28:27.823 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@5e8604bf] - activable => nextflow.secret.LocalSecretsProvider@5e8604bf
+Mar-05 17:28:27.851 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Mar-05 17:28:27.878 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [reverent_descartes] DSL2 - revision: 93a3f875c6
+Mar-05 17:28:28.118 [main] DEBUG nextflow.Session - Session UUID: 48d38e24-3d64-483e-94e9-da9c541c8d3b
+Mar-05 17:28:28.119 [main] DEBUG nextflow.Session - Run name: reverent_descartes
+Mar-05 17:28:28.120 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar-05 17:28:28.138 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Mar-05 17:28:28.152 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Mar-05 17:28:28.191 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.10.4 build 11173
+  Created: 10-02-2026 15:17 UTC (20:47 IST)
+  System: Linux 6.6.87.2-microsoft-standard-WSL2
+  Runtime: Groovy 4.0.28 on OpenJDK 64-Bit Server VM 25.0.2-internal-adhoc.conda.src
+  Encoding: UTF-8 (UTF-8)
+  Process: 16380@DESKTOP-1QQ45FI [127.0.1.1]
+  CPUs: 8 - Mem: 3.8 GB (370.6 MB) - Swap: 1 GB (257 MB)
+Mar-05 17:28:28.235 [main] DEBUG nextflow.Session - Work-dir: /home/sudharshini/nextflow_fastqc/work [ext2/ext3]
+Mar-05 17:28:28.236 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/sudharshini/nextflow_fastqc/bin
+Mar-05 17:28:28.256 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-05 17:28:28.282 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Mar-05 17:28:28.290 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Mar-05 17:28:28.453 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-05 17:28:28.478 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Mar-05 17:28:28.643 [main] DEBUG nextflow.Session - Session start
+Mar-05 17:28:29.724 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-05 17:28:30.048 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-05 17:28:30.049 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-05 17:28:30.085 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar-05 17:28:30.104 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=3.8 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Mar-05 17:28:30.109 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Mar-05 17:28:30.213 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'run_fastqc': maxForks=0; fair=false; array=0
+Mar-05 17:28:30.377 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-05 17:28:30.377 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-05 17:28:30.380 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'run_multiqc': maxForks=0; fair=false; array=0
+Mar-05 17:28:30.385 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: run_multiqc, run_fastqc
+Mar-05 17:28:30.389 [main] DEBUG nextflow.Session - Igniting dataflow network (3)
+Mar-05 17:28:30.400 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > run_fastqc
+Mar-05 17:28:30.402 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > run_multiqc
+Mar-05 17:28:30.405 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_99d00ca741a6c86b: /home/sudharshini/nextflow_fastqc/main.nf
+Mar-05 17:28:30.405 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: data/; pattern: *.fastq.gz; options: [:]
+Mar-05 17:28:30.407 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Mar-05 17:28:30.407 [main] DEBUG nextflow.Session - Session await
+Mar-05 17:28:30.852 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-05 17:28:30.855 [Task submitter] INFO  nextflow.Session - [60/fa9297] Submitted process > run_fastqc (1)
+Mar-05 17:28:54.415 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: run_fastqc (1); status: COMPLETED; exit: 0; error: -; workDir: /home/sudharshini/nextflow_fastqc/work/60/fa9297d396be97ff156687d726fd6f]
+Mar-05 17:28:54.426 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Mar-05 17:28:54.488 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-05 17:28:54.490 [Task submitter] INFO  nextflow.Session - [23/5691b8] Submitted process > run_multiqc (1)
+Mar-05 17:28:54.492 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Mar-05 17:28:59.051 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: run_multiqc (1); status: COMPLETED; exit: 0; error: -; workDir: /home/sudharshini/nextflow_fastqc/work/23/5691b8d38eceed54e53084246343a3]
+Mar-05 17:28:59.067 [main] DEBUG nextflow.Session - Session await > all processes finished
+Mar-05 17:28:59.151 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Mar-05 17:28:59.152 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar-05 17:28:59.157 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Mar-05 17:28:59.158 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Mar-05 17:28:59.182 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=2; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=28s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=2; peakCpus=2; peakMemory=0; ]
+Mar-05 17:28:59.387 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Mar-05 17:28:59.412 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Mar-05 17:28:59.414 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
